@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Arms - FLL Team Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Dynamic Background -->
+    <div class="dynamic-background">
+        <div class="dynamic-grid"></div>
+        <div class="dynamic-particle"></div>
+        <div class="dynamic-particle"></div>
+        <div class="dynamic-particle"></div>
+        <div class="dynamic-particle"></div>
+        <div class="dynamic-particle"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <button class="nav-btn home-btn" onclick="window.location.href='index.html'">
+                <i class="fas fa-home"></i> Home
+            </button>
+            <button class="nav-btn" onclick="window.location.href='about.html'">
+                <i class="fas fa-info-circle"></i> About Us
+            </button>
+            <button class="nav-btn" onclick="window.location.href='team.html'">
+                <i class="fas fa-users"></i> Team Members
+            </button>
+            <button class="nav-btn" onclick="window.location.href='contact.html'">
+                <i class="fas fa-envelope"></i> Contact Us
+            </button>
+            <button class="nav-btn" onclick="window.location.href='competition.html'">
+                <i class="fas fa-trophy"></i> Competition
+            </button>
+            <button class="nav-btn" onclick="window.location.href='mechanical.html'">
+                <i class="fas fa-robot"></i> Mechanical Arms
+            </button>
+            <button class="nav-btn" onclick="window.location.href='programs.html'">
+                <i class="fas fa-code"></i> Programs
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay for sidebar -->
+    <div class="overlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="page-container">
+            <h1>Mechanical Arms</h1>
+            
+            <!-- Branch Selector -->
+            <div class="branch-selector">
+                <button class="branch-btn" onclick="showBranch('super-powered')">
+                    <i class="fas fa-bolt"></i> FLL 2023: Super Powered
+                </button>
+                <button class="branch-btn" onclick="showBranch('masterpiece')">
+                    <i class="fas fa-palette"></i> FLL 2024: Masterpiece
+                </button>
+                <button class="branch-btn" onclick="showBranch('submerged')">
+                    <i class="fas fa-water"></i> FLL 2025: SUBMERGED
+                </button>
+            </div>
+
+            <!-- Content Areas -->
+            <div id="super-powered" class="branch-content" style="display: none;">
+                <div class="mechanical-content">
+                    <div class="mechanical-description">
+                        <p>Our team developed energy-efficient mechanical arms for the Super Powered season, focusing on optimizing power usage and maximizing performance.</p>
+                        <ul>
+                            <li>Energy recovery system for efficient power usage</li>
+                            <li>Smart power management for optimal performance</li>
+                            <li>Lightweight construction for reduced energy consumption</li>
+                        </ul>
+                    </div>
+
+                    <div class="design-files">
+                        <h3>EV3 Design Files</h3>
+                        <p class="file-description">These are LEGO EV3 design files that can be opened in the LEGO MINDSTORMS EV3 software.</p>
+                        <div class="sub-branches">
+                            <a class="sub-branch-btn" href="FLL2023 First Route Forward.io" download>
+                                <i class="fas fa-file-download"></i>
+                                First Route Forward.io
+                            </a>
+                            <a class="sub-branch-btn" href="FLL2023 First Route Back.io" download>
+                                <i class="fas fa-file-download"></i>
+                                First Route Back.io
+                            </a>
+                            <a class="sub-branch-btn" href="FLL2023 Second Route Forward.io" download>
+                                <i class="fas fa-file-download"></i>
+                                Second Forward.io
+                            </a>
+                            <a class="sub-branch-btn" href="FLL2023 Second Route Back.io" download>
+                                <i class="fas fa-file-download"></i>
+                                Second Back.io
+                            </a>
+                            <a class="sub-branch-btn" href="FLL2023 Third Route.io" download>
+                                <i class="fas fa-file-download"></i>
+                                Third Route.io
+                            </a>
+                            <a class="sub-branch-btn" href="FLL2023 Fifth Route.io" download>
+                                <i class="fas fa-file-download"></i>
+                                Fifth Route.io
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="masterpiece" class="branch-content" style="display: none;">
+                <div class="mechanical-content">
+                    <div class="mechanical-description">
+                        <p>Coming soon: Masterpiece mechanical arms design and documentation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="submerged" class="branch-content" style="display: none;">
+                <div class="mechanical-content">
+                    <div class="mechanical-description">
+                        <p>Our team is developing advanced mechanical arms for the SUBMERGED season, focusing on underwater exploration and precision control.</p>
+                        <ul>
+                            <li>Water-resistant design for underwater operations</li>
+                            <li>Precision control system for delicate movements</li>
+                            <li>Enhanced stability for underwater conditions</li>
+                        </ul>
+                    </div>
+
+                    <div class="design-files">
+                        <h3>EV3 Design Files</h3>
+                        <p class="file-description">These are LEGO EV3 design files that can be opened in the LEGO MINDSTORMS EV3 software.</p>
+                        <div class="sub-branches">
+                            <a class="sub-branch-btn" href="FLL2025 WEO first route.io" download>
+                                <i class="fas fa-file-download"></i>
+                                First Route.io
+                            </a>
+                            <a class="sub-branch-btn" href="FLL2025 WEO second route.io" download>
+                                <i class="fas fa-file-download"></i>
+                                Second Route.io
+                            </a>
+                            <a class="sub-branch-btn" href="FLL2025 WEO third route.io" download>
+                                <i class="fas fa-file-download"></i>
+                                Third Route.io
+                            </a>
+                            <a class="sub-branch-btn" href="FLL2025 WEO forth route.io" download>
+                                <i class="fas fa-file-download"></i>
+                                Fourth Route.io
+                            </a>
+                            <a class="sub-branch-btn" href="FLL2025 WEO seventh route.io" download>
+                                <i class="fas fa-file-download"></i>
+                                Seventh Route.io
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Show the selected branch content
+        function showBranch(branchId) {
+            // Hide all branch contents
+            document.querySelectorAll('.branch-content').forEach(content => {
+                content.style.display = 'none';
+            });
+            
+            // Show the selected branch content
+            document.getElementById(branchId).style.display = 'block';
+            
+            // Update active button state
+            document.querySelectorAll('.branch-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+
+        // Show Super Powered content by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showBranch('super-powered');
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
