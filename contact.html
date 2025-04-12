@@ -55,33 +55,22 @@
                     </div>
                     <div class="social-content">
                         <h3>Facebook</h3>
-                        <p>Follow us on Facebook</p>
-                        <a href="#" class="social-link">Visit our Page</a>
+                        <p>Follow us on Facebook for the latest updates and news.</p>
+                        <a href="https://www.facebook.com/profile.php?id=61560417221310" class="social-link" target="_blank">
+                            <i class="fab fa-facebook"></i> Visit Page
+                        </a>
                     </div>
                 </div>
 
                 <!-- Instagram -->
                 <div class="social-card instagram">
                     <div class="social-icon">
-                        <svg class="instagram-logo" viewBox="0 0 24 24" width="60" height="60">
-                            <defs>
-                                <linearGradient id="instagram-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#f09433"/>
-                                    <stop offset="25%" style="stop-color:#e6683c"/>
-                                    <stop offset="50%" style="stop-color:#dc2743"/>
-                                    <stop offset="75%" style="stop-color:#cc2366"/>
-                                    <stop offset="100%" style="stop-color:#bc1888"/>
-                                </linearGradient>
-                            </defs>
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="url(#instagram-gradient)"/>
-                            <circle cx="12" cy="12" r="5" fill="none" stroke="white" stroke-width="2"/>
-                            <circle cx="17" cy="7" r="1" fill="white"/>
-                        </svg>
+                        <i class="fab fa-instagram"></i>
                     </div>
                     <div class="social-content">
                         <h3>Instagram</h3>
-                        <p>Follow us for the latest updates and behind-the-scenes content!</p>
-                        <a href="https://www.instagram.com/your_instagram" class="social-link" target="_blank">
+                        <p>Follow our journey on Instagram for behind-the-scenes content.</p>
+                        <a href="https://www.instagram.com/yangzh_0916/" class="social-link" target="_blank">
                             <i class="fab fa-instagram"></i> Follow Us
                         </a>
                     </div>
@@ -94,8 +83,10 @@
                     </div>
                     <div class="social-content">
                         <h3>YouTube</h3>
-                        <p>Subscribe to our Channel</p>
-                        <a href="#" class="social-link">Visit our Channel</a>
+                        <p>Subscribe to our YouTube channel for robot demonstrations and tutorials.</p>
+                        <a href="https://www.youtube.com/@Fllplayer" class="social-link" target="_blank">
+                            <i class="fab fa-youtube"></i> Subscribe
+                        </a>
                     </div>
                 </div>
 
@@ -114,10 +105,16 @@
                     <div class="social-content">
                         <h3>Gmail</h3>
                         <p>Contact us via email for any inquiries or collaborations.</p>
-                        <button class="email-copy-btn" onclick="copyEmail()">
-                            <span class="email-text">yzihao803@gmail.com</span>
-                            <i class="fas fa-copy"></i>
-                        </button>
+                        <div class="email-copy-container">
+                            <button class="email-copy-btn" onclick="copyEmail()">
+                                <span class="email-text">yzihao803@gmail.com</span>
+                                <i class="fas fa-copy"></i>
+                            </button>
+                            <div class="checkmark-container">
+                                <div class="success-circle"></div>
+                                <i class="fas fa-check checkmark-icon"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -129,13 +126,32 @@
         function copyEmail() {
             const email = 'yzihao803@gmail.com';
             const btn = document.querySelector('.email-copy-btn');
+            const checkmark = document.querySelector('.checkmark-container');
+            const circle = document.querySelector('.success-circle');
             
             navigator.clipboard.writeText(email).then(() => {
-                const originalText = btn.innerHTML;
-                btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                // Hide the copy button
+                btn.style.opacity = '0';
+                
+                // Show the circle first
+                checkmark.style.display = 'flex';
+                circle.style.opacity = '1';
+                
+                // Then show the checkmark after circle completes
                 setTimeout(() => {
-                    btn.innerHTML = originalText;
-                }, 2000);
+                    const checkmarkIcon = document.querySelector('.checkmark-icon');
+                    checkmarkIcon.style.opacity = '1';
+                    
+                    // Reset after animation
+                    setTimeout(() => {
+                        circle.style.opacity = '0';
+                        checkmarkIcon.style.opacity = '0';
+                        setTimeout(() => {
+                            checkmark.style.display = 'none';
+                            btn.style.opacity = '1';
+                        }, 200);
+                    }, 1200);
+                }, 2400);
             });
         }
     </script>
