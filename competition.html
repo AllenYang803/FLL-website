@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competition - FLL Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Ocean Background Elements -->
+    <div class="ocean-background">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <button class="nav-btn home-btn" onclick="window.location.href='index.html'">
+                <i class="fas fa-home"></i> Home
+            </button>
+            <button class="nav-btn" onclick="window.location.href='about.html'">
+                <i class="fas fa-info-circle"></i> About Us
+            </button>
+            <button class="nav-btn" onclick="window.location.href='team.html'">
+                <i class="fas fa-users"></i> Team Members
+            </button>
+            <button class="nav-btn" onclick="window.location.href='contact.html'">
+                <i class="fas fa-envelope"></i> Contact Us
+            </button>
+            <button class="nav-btn" onclick="window.location.href='competition.html'">
+                <i class="fas fa-trophy"></i> Competition
+            </button>
+            <button class="nav-btn" onclick="window.location.href='mechanical.html'">
+                <i class="fas fa-robot"></i> Mechanical Arms
+            </button>
+            <button class="nav-btn" onclick="window.location.href='programs.html'">
+                <i class="fas fa-code"></i> Programs
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay for sidebar -->
+    <div class="overlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="page-container">
+            <h1>Competition</h1>
+            
+            <!-- Competition Header -->
+            <div class="competition-header">
+                <h2>FLL 2025: SUBMERGED</h2>
+                <p>Join us on our underwater adventure as we explore the mysteries of the ocean!</p>
+            </div>
+
+            <!-- Competition Timeline -->
+            <div class="competition-timeline">
+                <h3>Competition Timeline</h3>
+                <ul>
+                    <li>
+                        <span class="timeline-date">2022</span>
+                        <span class="timeline-event">China Championship</span>
+                        <p class="timeline-description">Achieved National Champions title, showcasing our team's excellence in both technical and core values aspects.</p>
+                    </li>
+                    <li>
+                        <span class="timeline-date">2023</span>
+                        <span class="timeline-event">World Championship</span>
+                        <p class="timeline-description">Secured a position in the top 20 for Robot Performance, demonstrating our technical capabilities on the global stage.</p>
+                    </li>
+                    <li>
+                        <span class="timeline-date">2024</span>
+                        <span class="timeline-event">APOC (Australia Pacific Open Championship)</span>
+                        <p class="timeline-description">Achieved 3rd place in both Robot Performance and Core Values, highlighting our balanced approach to competition.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Competition Achievements -->
+            <div class="competition-achievements">
+                <h3>Our Achievements</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <i class="fas fa-trophy"></i>
+                        <h4>China Championship</h4>
+                        <p>2022 National Champions</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-medal"></i>
+                        <h4>World Championship</h4>
+                        <p>2023 Top 20 Robot Performance</p>
+                    </div>
+                    <div class="achievement-card">
+                        <i class="fas fa-star"></i>
+                        <h4>APOC 2024</h4>
+                        <p>3rd Place in Robot Performance & Core Values</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competition Gallery -->
+            <div class="competition-gallery">
+                <h3>Competition Photos</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="FLL2023.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>FLL 2023: Super Powered Competition</p>
+                    </div>
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="FLL2024.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>FLL 2024: Masterpiece Competition</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

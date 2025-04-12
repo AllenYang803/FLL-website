@@ -1,0 +1,134 @@
+            <!-- Season Selector -->
+            <div class="season-selector">
+                <button class="season-btn" onclick="showSeason('cargo-connect')" data-season="cargo-connect">FLL 2022: Cargo Connect</button>
+                <button class="season-btn" onclick="showSeason('super-powered')" data-season="super-powered">FLL 2023: Super Powered</button>
+                <button class="season-btn" onclick="showSeason('masterpiece')" data-season="masterpiece">FLL 2024: Masterpiece</button>
+                <!-- 添加 active 类让 SUBMERGED 默认显示 -->
+                <button class="season-btn active" onclick="showSeason('submerged')" data-season="submerged">FLL 2025: SUBMERGED</button>
+            </div>
+
+            <!-- Season Content -->
+            <!-- 添加 id 以便 JS 选择 -->
+            <div class="season-content" id="season-content-container">
+                <!-- Cargo Connect (新增) -->
+                <div class="season-section cargo-connect">
+                    <h2>FLL 2022: Cargo Connect</h2>
+                    <div class="mechanical-content">
+                        <div class="mechanical-description">
+                            <p>关于 Cargo Connect 赛季的机械臂设计描述：</p>
+                            <ul>
+                                <li>运输效率优化</li>
+                                <li>自主导航策略</li>
+                                <li>货物抓取与放置机制</li>
+                            </ul>
+                        </div>
+                        <div class="design-files">
+                            <h3>机械臂设计文件</h3>
+                            <ul>
+                                <!-- 如果有文件，可以像下面这样添加 -->
+                                <!--
+                                <li>
+                                    <a href="mechanical/FLL2022/ExampleArm.io" download>
+                                        <i class="fas fa-download"></i> 示例文件
+                                    </a>
+                                </li>
+                                -->
+                                <li>暂无文件</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Super Powered -->
+                <div class="season-section super-powered">
+                    <h2>FLL 2023: Super Powered</h2>
+                    <div class="mechanical-content">
+                        <div class="mechanical-description">
+                            <p>在 Super Powered 赛季中，我们开发了具有以下特点的高能效机械臂：</p>
+                            <ul>
+                                <li>能量回收系统</li>
+                                <li>智能电源管理</li>
+                                <li>轻量化结构</li>
+                            </ul>
+                        </div>
+                        <div class="design-files">
+                            <h3>机械臂设计文件</h3>
+                            <ul>
+                                <li>
+                                    <a href="mechanical/FLL2023/First%20Route%20Forward.io" download>
+                                        <i class="fas fa-download"></i> First Route Forward
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mechanical/FLL2023/First%20Route%20Back.io" download>
+                                        <i class="fas fa-download"></i> First Route Back
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mechanical/FLL2023/Second%20Forward.io" download>
+                                        <i class="fas fa-download"></i> Second Forward
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mechanical/FLL2023/Second%20Back.io" download>
+                                        <i class="fas fa-download"></i> Second Back
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mechanical/FLL2023/Third.io" download>
+                                        <i class="fas fa-download"></i> Third Route
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mechanical/FLL2023/Fifth%20Route.io" download>
+                                        <i class="fas fa-download"></i> Fifth Route
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Masterpiece -->
+                <div class="season-section masterpiece">
+                    <h2>FLL 2024: Masterpiece</h2>
+                    <div class="mechanical-content">
+                        <div class="mechanical-description">
+                            <p>在 Masterpiece 赛季中，我们开发了具有以下特点的艺术性机械臂：</p>
+                            <ul>
+                                <li>精确颜色识别</li>
+                                <li>图案创作能力</li>
+                                <li>多轴运动</li>
+                            </ul>
+                        </div>
+                        <div class="design-files">
+                            <h3>机械臂设计文件</h3>
+                            <ul>
+                                <li>暂无文件</li> <!-- 当有文件时添加 -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUBMERGED -->
+                <!-- 添加 active 类让 SUBMERGED 默认显示 -->
+                <div class="season-section submerged active">
+                    <h2>FLL 2025: SUBMERGED</h2>
+                    <div class="mechanical-content">
+                        <div class="mechanical-description">
+                            <p>在 SUBMERGED 赛季中，我们正在开发具有以下特点的水下机械臂：</p>
+                            <ul>
+                                <li>防水结构</li>
+                                <li>水流补偿系统</li>
+                                <li>深度控制机制</li>
+                            </ul>
+                        </div>
+                        <div class="design-files">
+                            <h3>机械臂设计文件</h3>
+                            <ul>
+                                <li>暂无文件</li> <!-- 当有文件时添加 -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
