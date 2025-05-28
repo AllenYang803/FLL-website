@@ -1433,4 +1433,29 @@ body {
     .season-icon {
         font-size: 1.5em;
     }
+}
+
+.team-photo-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.team-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.team-photo:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .team-photo-container {
+        padding: 0 0.5rem;
+    }
 } 

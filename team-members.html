@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members - FLL Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .team-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .member-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .member-button:hover {
+            background-color: #45a049;
+        }
+        .member-button.active {
+            background-color: #357abd;
+        }
+        .photo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .member-photo {
+            max-width: 100%;
+            max-height: 400px;
+            display: none;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .member-photo.active {
+            display: block;
+        }
+        .member-info {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .member-info.active {
+            display: block;
+        }
+        .member-info h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .member-info p {
+            color: #666;
+            line-height: 1.6;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dynamic Background -->
+    <div class="dynamic-background">
+        <div class="dynamic-grid"></div>
+        <div class="dynamic-particle"></div>
+        <div class="dynamic-particle"></div>
+        <div class="dynamic-particle"></div>
+        <div class="dynamic-particle"></div>
+        <div class="dynamic-particle"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <button class="nav-btn home-btn" onclick="window.location.href='index.html'">
+                <i class="fas fa-home"></i> Home
+            </button>
+            <button class="nav-btn" onclick="window.location.href='about.html'">
+                <i class="fas fa-info-circle"></i> About Us
+            </button>
+            <button class="nav-btn" onclick="window.location.href='team-members.html'">
+                <i class="fas fa-users"></i> Team Members
+            </button>
+            <button class="nav-btn" onclick="window.location.href='mechanical.html'">
+                <i class="fas fa-robot"></i> Mechanical Arms
+            </button>
+            <button class="nav-btn" onclick="window.location.href='programs.html'">
+                <i class="fas fa-code"></i> Programs
+            </button>
+            <button class="nav-btn" onclick="window.location.href='competition.html'">
+                <i class="fas fa-trophy"></i> Competition
+            </button>
+            <button class="nav-btn" onclick="window.location.href='contact.html'">
+                <i class="fas fa-envelope"></i> Contact Us
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay for sidebar -->
+    <div class="overlay"></div>
+
+    <div class="team-container">
+        <h1>Team Members</h1>
+        <div class="button-container">
+            <button class="member-button" data-photo="AndyGuo.jpg" data-info="andy-info">AndyGuo</button>
+            <button class="member-button" data-photo="丁乐文.jpg" data-info="leven-info">丁乐文</button>
+            <button class="member-button" data-photo="侯沐宸.jpg" data-info="muchen-info">侯沐宸</button>
+            <button class="member-button" data-photo="孟衍杰.jpg" data-info="yanjie-info">孟衍杰</button>
+            <button class="member-button" data-photo="王钰之.jpg" data-info="yuzhi-info">王钰之</button>
+            <button class="member-button" data-photo="陈子谦.jpg" data-info="ziqian-info">陈子谦</button>
+        </div>
+        <div class="photo-container">
+            <img src="AndyGuo.jpg" alt="AndyGuo" class="member-photo active" id="AndyGuo.jpg">
+            <img src="丁乐文.jpg" alt="丁乐文" class="member-photo" id="丁乐文.jpg">
+            <img src="侯沐宸.jpg" alt="侯沐宸" class="member-photo" id="侯沐宸.jpg">
+            <img src="孟衍杰.jpg" alt="孟衍杰" class="member-photo" id="孟衍杰.jpg">
+            <img src="王钰之.jpg" alt="王钰之" class="member-photo" id="王钰之.jpg">
+            <img src="陈子谦.jpg" alt="陈子谦" class="member-photo" id="陈子谦.jpg">
+        </div>
+        <div class="member-info active" id="andy-info">
+            <h2>AndyGuo</h2>
+            <p>I'm 11 years old and live in the capital city of China, Beijing. I love building things, especially with LEGO! I started with simple sets when I was 4 years old, but now I enjoy creating my own robots and machines with my friends. Using LEGO Boost and LEGO Mindstorms, I've built robots that can move, light up, and even play music!</p>
+        </div>
+        <div class="member-info" id="leven-info">
+            <h2>丁乐文 (Leven)</h2>
+            <p>My name is Leven. I'm 10 years old. I have taken LEGO classes for 4 years and participated in FLL Asian Open last year. I'm fond of playing soccer and practice in a local club three times a week. My favorite soccer team is Manchester City in UK. I also love traveling and reading books of Harry Potter.</p>
+        </div>
+        <div class="member-info" id="muchen-info">
+            <h2>侯沐宸</h2>
+            <p>I'm a high school sophomore named Hou Muchen. I'm 16 years old and have loved robotics since the third grade. I am skilled in CAD modeling and Python programming, and I take on engineering tasks in my team. I enjoy music, hip-hop and R&B are my favorites.</p>
+        </div>
+        <div class="member-info" id="yanjie-info">
+            <h2>孟衍杰</h2>
+            <p>Coming soon...</p>
+        </div>
+        <div class="member-info" id="yuzhi-info">
+            <h2>王钰之</h2>
+            <p>Hello everyone! My name is Wang Yuzhi. I'm a 7th-grade student, and I'm proud to say I'm a boy full of energy and enthusiasm. I'm crazy about sports, especially badminton and soccer. I study at Bayi School, and I really love it here.</p>
+        </div>
+        <div class="member-info" id="ziqian-info">
+            <h2>陈子谦</h2>
+            <p>My name is Chen Ziqian, 12 years old. As a Grade 7 of Beijing Bayi School, I am proud to represent my school in the Lego FLL challenge. I am looking forward to communicating with other excellent teams in this competition and hope our team can achieve good results.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.member-button');
+            const photos = document.querySelectorAll('.member-photo');
+            const infos = document.querySelectorAll('.member-info');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const photoId = this.getAttribute('data-photo');
+                    const infoId = this.getAttribute('data-info');
+                    
+                    // Hide all photos and infos
+                    photos.forEach(photo => {
+                        photo.classList.remove('active');
+                    });
+                    infos.forEach(info => {
+                        info.classList.remove('active');
+                    });
+                    
+                    // Remove active class from all buttons
+                    buttons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    
+                    // Show selected photo and info
+                    document.getElementById(photoId).classList.add('active');
+                    document.getElementById(infoId).classList.add('active');
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html> 
